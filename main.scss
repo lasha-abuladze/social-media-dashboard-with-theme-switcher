@@ -1,0 +1,131 @@
+
+
+body {
+    font-family: "Inter", serif;
+    transition: all 0.4s;
+}
+
+
+
+main {
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+
+    header {
+        width: 100%;
+        height: 300px;
+        background-color: #F7F9FF;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transition: all 0.4s;
+
+        border-radius: 0px 0px 50px 50px;
+
+        hgroup {
+            width: 100%;
+            padding: 24px;
+            box-sizing: border-box;
+
+            h2 {
+                text-align: left;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 3px;
+                color: #1D1F29;
+            }
+    
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                color: #63687D;
+            }
+        }
+
+        .hgroup--underline {
+            width: calc(100% - 48px);
+            margin: auto;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #848BAB;
+        }
+
+        .switch-mode {
+            padding: 0px 24px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.4s;
+
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                color: #63687D;
+            }
+
+            .switch-div {
+                width: 48px;
+                height: 24px;
+                background-color: #AEB3CB;
+                border-radius: 30px;
+                position: relative;
+                cursor: pointer;
+
+                .circle {
+                    width: 17px;
+                    height: 17px;
+                    background-color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    transition: all 0.4s;
+
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    left: 55%;
+                    // left: 10%;
+                }
+            }
+        }
+    }
+
+
+    .general-overview {
+        width: 100%;
+        height: 200px;
+        background-color: red;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.body--dark-mode {
+    background-color: black;
+}
+
+.header--dark-mode {
+    background-color: #040404;
+}
+
+.text--white {
+    color: #fff;
+}
+
+.circle-dark-mode {
+    left: 10% !important;
+}
+
+.switch-div--dark {
+    background-color: green !important;
+}
