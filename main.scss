@@ -6,7 +6,6 @@ body {
 }
 
 
-
 main {
     padding: 24px;
     box-sizing: border-box;
@@ -17,7 +16,7 @@ main {
         height: 300px;
         background-color: #F7F9FF;
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         top: 0;
         left: 0;
         transition: all 0.4s;
@@ -92,10 +91,95 @@ main {
     }
 
 
-    .general-overview {
+    .general-overview--container {
         width: 100%;
-        height: 200px;
-        background-color: red;
+        margin-top: 150px;
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .general-overview--div {
+            width: 100%;
+            background-color: #F1F3FA;
+            text-align: center;
+            padding: 24px 0px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            transition: all 0.4s;
+
+            .soc-media--logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #63687D;
+                }
+            }
+
+            strong {
+                display: block;
+                margin-top: 28px;
+                margin-bottom: 13px;
+                font-size: 56px;
+                font-weight: 800;
+                color: #1D1F29;
+                transition: all 0.4s;
+            }
+
+            .foll--sub {
+                display: block;
+                margin-bottom: 28px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #63687D;
+                letter-spacing: 3px;
+            }
+
+            
+            .foll-sub--numb {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                font-size: 12px;
+                font-weight: 600;
+
+            }
+
+
+
+            
+
+
+        }
+
+        .facebook-gen {
+            border-top: 3px solid #178FF5;
+        }
+
+        .twitter-gen {
+            border-top: 3px solid #1DA1F2;
+        }
+
+        .instagram-gen {
+            border-top: 3px solid #EE877E;
+        }
+
+        .youtube-gen {
+            border-top: 3px solid red;
+        }
+
+
+
+
     }
 
 }
@@ -119,7 +203,7 @@ main {
 }
 
 .text--white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .circle-dark-mode {
@@ -128,4 +212,9 @@ main {
 
 .switch-div--dark {
     background-color: green !important;
+}
+
+
+.general-overview--div--dark {
+    background-color: #252B42 !important;
 }
