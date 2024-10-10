@@ -1,6 +1,8 @@
 body {
   font-family: "Inter", serif;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  padding-bottom: 50px;
+  box-sizing: border-box; }
 
 main {
   padding: 24px;
@@ -118,6 +120,53 @@ main {
       border-top: 3px solid #EE877E; }
     main .general-overview--container .youtube-gen {
       border-top: 3px solid red; }
+
+.overview-today {
+  padding: 0px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 24px; }
+  .overview-today h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    color: #63687D; }
+  .overview-today .overview-today--div {
+    width: 100%;
+    background-color: #F1F3FA;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    box-sizing: border-box; }
+    .overview-today .overview-today--div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px; }
+    .overview-today .overview-today--div .title--number span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #63687D; }
+    .overview-today .overview-today--div .title--number strong {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1D1F29; }
+    .overview-today .overview-today--div .logo-percentage {
+      align-items: end; }
+      .overview-today .overview-today--div .logo-percentage img {
+        width: 25px;
+        height: 25px; }
+      .overview-today .overview-today--div .logo-percentage .percentage {
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 5px; }
+        .overview-today .overview-today--div .logo-percentage .percentage img {
+          width: 8px;
+          height: 6px; }
 
 .body--dark-mode {
   background-color: black; }

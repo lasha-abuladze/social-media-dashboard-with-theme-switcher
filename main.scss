@@ -3,6 +3,8 @@
 body {
     font-family: "Inter", serif;
     transition: all 0.4s;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 
@@ -182,6 +184,74 @@ main {
 
     }
 
+}
+
+
+.overview-today {
+    padding: 0px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 24px;
+
+    h2 {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 700;
+        color: #63687D;
+    }
+
+    .overview-today--div {
+        width: 100%;
+        background-color: #F1F3FA;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+        box-sizing: border-box;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .title--number {
+            span {
+               font-size: 14px;
+               font-weight: 600; 
+               color: #63687D;
+            }
+
+            strong {
+                font-size: 32px;
+                font-weight: 700;
+                color: #1D1F29;
+            }
+        }
+
+        .logo-percentage {
+            align-items: end;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .percentage {
+                font-size: 13px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                img {
+                    width: 8px;
+                    height: 6px;
+                }
+            }
+        }
+    }
 }
 
 
