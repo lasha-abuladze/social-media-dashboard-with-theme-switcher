@@ -257,13 +257,6 @@ main {
 
 
 
-
-
-
-
-
-
-
 .body--dark-mode {
     background-color: black;
 }
@@ -287,4 +280,71 @@ main {
 
 .general-overview--div--dark {
     background-color: #252B42 !important;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    main {
+
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            padding: 50px;
+            box-sizing: border-box;
+    
+            hgroup {
+                padding: 0px;
+            }
+    
+            .hgroup--underline {
+                display: none;
+            }
+    
+            .switch-mode {
+                width: 100%;
+                padding: 0px;
+                justify-content: end;
+                gap: 20px;    
+    
+                .switch-div {
+                    min-width: 48px;
+                }
+            }
+        }
+    
+    }
+
+    .general-overview--container {
+        padding: 50px;
+        box-sizing: border-box;
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 24px;
+
+
+
+    }
+
+    .overview-today {
+        padding: 50px;
+        position: relative;
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 24px;
+    
+        h2 {
+            position: absolute;
+            left: 50px;
+        }
+    }
+
+
 }

@@ -185,3 +185,39 @@ main {
 
 .general-overview--div--dark {
   background-color: #252B42 !important; }
+
+@media (min-width: 768px) {
+  main header {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 50px;
+    box-sizing: border-box; }
+    main header hgroup {
+      padding: 0px; }
+    main header .hgroup--underline {
+      display: none; }
+    main header .switch-mode {
+      width: 100%;
+      padding: 0px;
+      justify-content: end;
+      gap: 20px; }
+      main header .switch-mode .switch-div {
+        min-width: 48px; }
+  .general-overview--container {
+    padding: 50px;
+    box-sizing: border-box;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px; }
+  .overview-today {
+    padding: 50px;
+    position: relative;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px; }
+    .overview-today h2 {
+      position: absolute;
+      left: 50px; } }
