@@ -348,3 +348,37 @@ main {
 
 
 }
+
+
+@media (min-width: 1100px) {
+
+    main {
+
+        header {
+            padding: 50px 11%;
+        }
+    
+    }
+
+    .general-overview--container {
+        width: 100%;
+        padding: 50px 11%;
+        box-sizing: border-box;
+
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .overview-today {
+        padding: 50px 11%;
+
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+        h2 {
+            left: 11%;
+        }
+    }
+
+}
